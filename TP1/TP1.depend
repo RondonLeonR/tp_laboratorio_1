@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1535556265 source:d:\rondon\ejerciciosagosto2018\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1536345436 source:c:\users\user\desktop\utn-segundo cuatrimestre\ejerciciosagosto2018\tp1\funcionestp1.c
+	<stdio.h>
+	<stdlib.h>
+
+1536344895 source:c:\users\user\desktop\utn-segundo cuatrimestre\ejerciciosagosto2018\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionesTP1.h"
+
+1536344046 c:\users\user\desktop\utn-segundo cuatrimestre\ejerciciosagosto2018\tp1\funcionestp1.h
+
+1536345620 source:c:\users\user\desktop\trabajo practico nro 1- rondon\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"FuncionesTP1.h"
+
+1536345436 c:\users\user\desktop\trabajo practico nro 1- rondon\tp1\funcionestp1.h
+
