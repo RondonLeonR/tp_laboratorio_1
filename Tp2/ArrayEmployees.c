@@ -254,6 +254,7 @@ void reports(Employee list[],int len,Sector sectors[],int lenSec)
         sortEmployees(list,len,sectors,lenSec);
         break;
     case 2:
+        averageSalary(list,len,sectors,lenSec);
         break;
     default:
         break;
@@ -295,7 +296,44 @@ void sortEmployees(Employee list[],int len,Sector sectors[],int lenSec)
 
 void averageSalary(Employee list[],int len,Sector sectors[],int lenSec)
 {
+    int flag=1;
+    int contador=0;
+    float salaries=0.00;
+    float average;
 
+    for(int i=0;i<len;i++)
+    {
+        if(list[i].isEmpty==OCUP)
+        {
+            salaries=salaries+list[i].salary;
+            contador++;
+        }
+    }
+
+    average=salaries/contador;
+
+    system("cls");
+
+    printf("Salario Total: %.2f\n",salaries);
+    printf("Promedio: %.2f\n",average);
+
+    printf("\nUsuarios con mayor sueldo que el Promedio: %.2f\n\n");
+
+    for(int j=0;j<len;j++)
+    {
+        if(list[j].salary>average && list[j].isEmpty==OCUP)
+        {
+            showEmployee(list[j],sectors,lenSec);
+            flag=0;
+        }
+    }
+    if(flag==1)
+    {
+
+        printf("\nNo se encontraron Usuarios con el Sueldo Mayor que el Promedio.\n");
+
+    }
+    system("pause");
 }
 
 

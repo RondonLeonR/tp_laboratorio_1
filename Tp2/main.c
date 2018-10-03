@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "ArrayEmployees.h"
 
-#define CANT 10
+#define CANT 1000
 #define CANT_SEC 5
 
 int main()
